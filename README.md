@@ -20,16 +20,15 @@ Este repositorio contiene la práctica que integra cuatro módulos principales p
 
 ## 4. Pipeline (diagrama + explicación breve)
 
-```graph TD
-A[📷 Entrada: Imagen/Video] --> B[🔍 YOLO - Detección de objetos]
-B --> C[✋ MediaPipe - Análisis de landmarks / gestos]
-B --> D[🌊 MiDaS - Estimación de profundidad]
-B --> E[🎭 SAM - Segmentación precisa]
-D --> F[📊 Evaluación de cercanía y área ocupada]
-E --> F
-F --> G[📈 Salida: Análisis visual y métricas]
-
-
+```mermaid
+graph TD
+    A[📷 Entrada: Imagen/Video] --> B[🔍 YOLO - Detección de objetos]
+    B --> C[✋ MediaPipe - Análisis de landmarks / gestos]
+    B --> D[🌊 MiDaS - Estimación de profundidad]
+    B --> E[🎭 SAM - Segmentación precisa]
+    D --> F[📊 Evaluación de cercanía y área ocupada]
+    E --> F
+    F --> G[📈 Salida: Análisis visual y métricas]
 ```
 
 | Etapa                 | Descripción                                                                             |
